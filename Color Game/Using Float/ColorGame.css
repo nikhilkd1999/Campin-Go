@@ -1,0 +1,30 @@
+body{
+    background-color: beige;
+}
+
+.container{
+    background-color: grey;
+    margin: 0 auto;
+    max-width: 600px;
+
+}
+
+.square{
+
+    width: 30%;
+    margin: 1.6666%;
+    background-color: beige;
+    padding-bottom: 30%;
+    /* color: black; */
+    border-radius: 25px;
+    float: left;
+    transition: background 0.5s;
+
+    /* 8805577038 */
+
+}
+
+h1{
+    text-align: center;
+    /* color: white; */
+}

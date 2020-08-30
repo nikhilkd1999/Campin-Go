@@ -1,0 +1,21 @@
+<h1>Friend List</h1>
+
+
+<ol>
+    
+
+    <%for(let i = 0; i<friends.length; i++){%>
+
+        <li> <%=friends[i]%> </li>
+        
+        <%}%>
+        
+</ol>
+
+<form action="/addFriend" method="POST">
+
+    <input name="newfriend" placeholder="Name" type="text">
+
+    <button>Add Friend</button>
+
+</form>

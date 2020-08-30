@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+<div class="container">
+
+
+    <h1>Campgrounds</h1>
+
+    <a class="btn btn-sm btn-danger bt" href="/">Go Back</a>
+    <a class="btn btn-sm btn-danger bt" href="/campgrounds/new">Add New</a>
+
+    <div class="row">
+
+        <% campgrounds.forEach(function(campground){ %>
+
+        <!-- <div class="jumbotron">
+            <h2><%= campground.name%></h2>
+            <img src="<%=campground.img%>" alt="Nothing">
+        </div> -->
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <!-- <div class="col-6 col-xl-12">
+
+
+            <div class="card " style="width: 18rem;">
+                <img src="<%=campground.image%>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><%=campground.name%></h5>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+        </div> -->
+
+
+        <div class="col-md-6 col-lg-4 my-2 col-xl-3">
+
+            <div class="card">
+                <img src="<%=campground.image%>" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title"><%=campground.name%></h5>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <% }); %>
+
+    </div>
+
+
+</div>

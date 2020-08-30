@@ -1,0 +1,52 @@
+<%-     include("./partials/header.ejs")     %>
+
+
+<div class="container mt-5">
+    
+ 
+    <h1>All Usernames And Passwords Goes Here</h1>
+
+    <form class="form-group" action="/add", method="POST">
+    
+        <input type="text" name="AccountDetails[accountName]" placeholder="Account Name" class="form-control" >
+        <input type="text" name="AccountDetails[accountUserName]" placeholder="Username" class="form-control" >
+        <input type="password" name="AccountDetails[accountPassword]" placeholder="Password" class="form-control" >
+    
+        <button class="btn btn-success" >Add</button>
+    
+        <a class="btn btn-danger" href="/logout">Logout</a>
+    </form>
+
+
+
+
+</div>
+
+
+<div class="container mt5">
+    
+
+    <%     user.accountDetails.forEach(function(detail){       %>
+
+       
+        <ul class="list-group">
+            <li class="list-group-item active"><%= detail.accountName  %></li>
+            <li class="list-group-item"><strong>Username : </strong><%= detail.accountUserName  %></li>
+            <li class="list-group-item"><strong>Password : </strong><%= detail.accountPassword  %></li>
+        </ul>
+       
+        <br>
+        
+        <%});%>
+
+
+</div>
+
+
+
+
+
+
+
+
+<%-     include("./partials/footer.ejs")     %>

@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* border: 2px solid brown; */
+}
+.container{
+    /* border: 5px solid violet; */
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.square{
+    width: 30%;
+    padding-bottom: 30%;
+    /* border: 1px solid black; */
+    margin: 10px;
+    border-radius: 25px;
+}
+
+h1{
+    text-align: center;
+}
